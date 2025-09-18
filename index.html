@@ -12,42 +12,46 @@
         section { padding: 60px 20px; }
         .content { max-width: 800px; margin: 0 auto; }
         .hero { background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; color: #fff; padding: 100px 20px; text-align: center; }
-        .hero h1 { font-size: 3em; margin-bottom: 0.5em; }
+        .hero h1 { font-size: 2.5em; margin-bottom: 0.5em; }
         .cta-button { display: inline-block; padding: 12px 24px; background-color: #D26041; color: #fff; text-decoration: none; border-radius: 5px; margin-top: 20px; }
         footer { background-color: #F4E6DC; text-align: center; padding: 20px; }
     </style>
 </head>
 <body>
+    <!-- Section héro avec titre personnalisé -->
     <header class="hero">
-        <h1 data-aos="fade-down">Bienvenue sur mon site</h1>
-        <p data-aos="fade-up">Une page unique avec des animations au défilement</p>
+        <h1 data-aos="fade-down">Seynabou Gaye, Sophrologue spécialisée dans l'accompagnement de la femme et de l'enfant.</h1>
+        <p data-aos="fade-up">Votre soutien dans les étapes clé de votre vie.</p>
         <a href="#about" class="cta-button" data-aos="zoom-in">En savoir plus</a>
     </header>
+    <!-- Section À propos -->
     <section id="about">
         <div class="content">
             <h2 data-aos="fade-right">À propos</h2>
-            <p data-aos="fade-left">Ce site est un exemple de page unique utilisant des animations AOS. Vous pouvez ajouter autant de sections que vous souhaitez et personnaliser les effets d'apparition.</p>
+            <p data-aos="fade-left">Ce site est un exemple de page unique utilisant des animations AOS. Vous pouvez personnaliser cette section pour présenter votre activité ou votre entreprise.</p>
         </div>
     </section>
+    <!-- Section Services -->
     <section id="services" style="background-color:#f8f9fa;">
         <div class="content">
             <h2 data-aos="fade-up">Nos Services</h2>
             <p data-aos="fade-up" data-aos-delay="100">Nous offrons une variété de services pour vous aider à créer un site web moderne et dynamique.</p>
+            <!-- Ajoutez ici des sous-sections ou une liste pour détailler vos services -->
         </div>
     </section>
+    <!-- Section Contact avec logo WhatsApp et adresse email -->
     <section id="contact">
         <div class="content">
             <h2 data-aos="fade-right">Contact</h2>
-            <form action="https://formspree.io/f/your-form-id" method="POST" data-aos="fade-left">
-                <label>Nom : <input type="text" name="name" required></label><br><br>
-                <label>Email : <input type="email" name="_replyto" required></label><br><br>
-                <label>Message :<br><textarea name="message" rows="5" required></textarea></label><br><br>
-                <button type="submit">Envoyer</button>
-            </form>
+            <p data-aos="fade-left" style="display:flex; align-items:center; gap:10px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/WhatsApp_logo.png" alt="Logo WhatsApp" style="height:40px; width:40px;">
+                <a href="mailto:sgaye.sophrologue@gmail.com" style="color:#D26041; font-weight:bold;">sgaye.sophrologue@gmail.com</a>
+            </p>
         </div>
     </section>
+    <!-- Pied de page -->
     <footer>
-        <p>© 2025 Votre Nom</p>
+        <p>© 2025 Seynabou Gaye</p>
     </footer>
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
