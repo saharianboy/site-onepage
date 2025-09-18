@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site One Page</title>
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+        header { background-color: #375a7f; color: #fff; padding: 80px 20px; text-align: center; }
+        section { padding: 60px 20px; }
+        .content { max-width: 800px; margin: 0 auto; }
+        .hero { background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; color: #fff; padding: 100px 20px; text-align: center; }
+        .hero h1 { font-size: 3em; margin-bottom: 0.5em; }
+        .cta-button { display: inline-block; padding: 12px 24px; background-color: #ff6f61; color: #fff; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+        footer { background-color: #f5f5f5; text-align: center; padding: 20px; }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1 data-aos="fade-down">Bienvenue sur mon site</h1>
+        <p data-aos="fade-up">Une page unique avec des animations au défilement</p>
+        <a href="#about" class="cta-button" data-aos="zoom-in">En savoir plus</a>
+    </header>
+    <section id="about">
+        <div class="content">
+            <h2 data-aos="fade-right">À propos</h2>
+            <p data-aos="fade-left">Ce site est un exemple de page unique utilisant des animations AOS. Vous pouvez ajouter autant de sections que vous souhaitez et personnaliser les effets d'apparition.</p>
+        </div>
+    </section>
+    <section id="services" style="background-color:#f8f9fa;">
+        <div class="content">
+            <h2 data-aos="fade-up">Nos Services</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Nous offrons une variété de services pour vous aider à créer un site web moderne et dynamique.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="content">
+            <h2 data-aos="fade-right">Contact</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST" data-aos="fade-left">
+                <label>Nom : <input type="text" name="name" required></label><br><br>
+                <label>Email : <input type="email" name="_replyto" required></label><br><br>
+                <label>Message :<br><textarea name="message" rows="5" required></textarea></label><br><br>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 Votre Nom</p>
+    </footer>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+      });
+    </script>
+</body>
+</html>
